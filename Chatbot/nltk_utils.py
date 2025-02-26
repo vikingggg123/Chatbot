@@ -1,6 +1,6 @@
 import nltk
 import nltk.stem.porter
-# nltk.download('punkt_tab')
+nltk.download('punkt_tab')
 import numpy as np
 
 
