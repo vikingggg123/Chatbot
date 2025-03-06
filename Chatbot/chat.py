@@ -6,12 +6,12 @@ from nltk_utils import Tokenizing, BagOfWord
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open("intents.json","r") as f:
+with open("intent.json","r") as f:
     intents = json.load(f)
 
-model = torch.load("chatbotV2.pth")
+model = torch.load("chatbotV3.pth")
 
-data = torch.load('data.pth')
+data = torch.load('dataV2.pth')
 
 all_words = data['all_word']
 tags = data["tags"]
